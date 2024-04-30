@@ -26,6 +26,6 @@ function wpforms_disable() {
         wpforms()->form->update($form_id, array('is_active' => false));
     }
 
-    add_action('init', 'wpforms_disable');
-
 }
+
+add_action('init', 'wpforms_disable');
