@@ -23,7 +23,7 @@ function wpforms_disable() {
 
     if (current_time('timestamp') >= strtotime($date_disable)) {
         
-        wpforms()->form->update($form_id, array('is_active' => false, 'title' => 'This form is no longer accepting submissions.'));
+        wpforms()->form->update($form_id, array('title' => 'This form is no longer accepting submissions.'));
     }
 
 }
