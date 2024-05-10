@@ -16,10 +16,10 @@ function wpforms_disable() {
     }
 
     //ID of form to be deactivated
-    $form_id = 1; //Replace 1 with the ID of your WPForms form
+    $form_id = 0; //Replace 0 with the ID of your WPForms form
 
     //Date and time when the form should be deactivated (format: 'Y-m-d H:i:s')
-    $date_disable = '2024-06-08 00:00:00';
+    $date_disable = '0000-00-00 00:00:00';
 
     if (current_time('timestamp') >= strtotime($date_disable)) {
         
